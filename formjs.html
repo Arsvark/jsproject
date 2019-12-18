@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulairejava</title>
+</head>
+<body>
+    <body>
+        <form action="work.html" method="post" id="formjs" onsubmit="return valider()">
+            <h1>Formulaire d'inscritption</h1>
+            <p>
+                <label for="username">Nom d'utilisateur</label> :
+                <input type="text" name="username" id="username" >
+            </p>
+            <p>
+                <label for="nom">Nom de famille</label>:
+                <input type="text" name="nom" id="nom" >
+                <span id="aideNom"></span>
+            </p>
+            <p>
+                <label for="prenom">Prénom</label>:
+                <input type="text" name="prenom" id="prenom" >
+            <p>
+                <label for="mdp">Mot de passe</label> :
+                <input type="password" name="mdp" id="mdp" >
+            </p>
+              <p>
+                <label for="courriel">Courriel</label> :
+                <input type="email" name="courriel" id="courriel" >
+                <span id="aideCourriel"></span>
+            </p>
+            <p>
+                <label>Date de Naissance : </label>
+                <input type="text" id="DateNais" name="dateNais" minlength="9" maxlength="10">
+            </p>
+            <p>
+                <label for="sexe">Vous êtes :</label>
+                <select name="sexe" id="sexe" required>
+                    <option value="male" selected>Un homme</option>
+                    <option value="female">Une femme</option>
+                </select>
+            </p>
+            <p id="error" style="color:black"></p>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+        </form>
+        <script type="text/javascript" src="frmjs.js"></script>
+</body>
+</html>
